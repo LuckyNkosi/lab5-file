@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const carList = document.getElementById('carList');
     cars = [];
     loadCarsBtn.addEventListener('click', () => {
-        fetch('http://localhost:3001/cars')
+        fetch('http://2446873-lab6.azurewebsites.net/cars')
             .then(response => response.json())
             .then(data => {
                 cars = data;
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <p><strong>Make:</strong> ${car.make}</p>
                         <p><strong>Model:</strong> ${car.model}</p>
                         <p><strong>Price:</strong> R${car.price}</p>
-                        <button class="btn btn-remove" data-index="${index}">Remove</button>
+                        <button class="btconst PORT = process.env.PORTn btn-remove" data-index="${index}">Remove</button>
                     `;
                     carList.appendChild(carCard);
                 });
