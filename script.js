@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 function addCar(newCar) {
-    fetch('http://localhost:3000/cars', {
+    fetch('https://2446873-lab6-app.azurewebsites.net/api/HttpAddCar', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
